@@ -1,0 +1,29 @@
+<section class="container">
+  <h1>Login</h1>
+  <form (ngSubmit)="enviarLogin()">
+    <div class="form-field">
+      <label class="form-field__label" for="email">email</label>
+      <input
+        class="form-field__input"
+        id="email"
+        type="text"
+        [(ngModel)]="email"
+        name="email"
+      />
+    </div>
+
+    <div class="form-field">
+      <label class="form-field__label" for="senha">Senha</label>
+      <input
+        class="form-field__input"
+        id="senha"
+        type="password"
+        name="senha"
+        [(ngModel)]="senha"
+        name="senha"
+      />
+    </div>
+
+    <button>Login</button>
+  </form>
+</section>
